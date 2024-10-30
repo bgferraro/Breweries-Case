@@ -1,0 +1,5 @@
+breweries
+.git
+.env
+breweries_settings.yaml
+logs/

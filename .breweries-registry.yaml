@@ -1,0 +1,6 @@
+# These categories will be applied to all DAGs in the repo.
+categories:
+  - AI + Machine Learning
+# List of DAGs that should be published
+dags:
+  - path: dags/databricks-jobs-dynamic.py
