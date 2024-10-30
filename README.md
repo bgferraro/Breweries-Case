@@ -34,7 +34,7 @@ Run this Airflow project without installing anything locally.
    ![image](https://github.com/user-attachments/assets/1fad3775-0514-451c-82c7-d25421b059cd)
 
 3. It is also possible to look at the execution of each job through the Spark UI to identify partitioning, parallel processes execution time problems in the Spark Dags and Catalyst Optimizer in more detail.
-   ![image](https://github.com/user-attachments/assets/88c4b236-4c0f-477f-b74d-86293e0bfa22)
+![image](https://github.com/user-attachments/assets/88c4b236-4c0f-477f-b74d-86293e0bfa22)
 
 
 2. In case of errors, the execution can be repeated according to the existing configuration and if there is an error again, a deeper validation will need to be carried out to overcome whether it is related to the code or not for a manual execution.
