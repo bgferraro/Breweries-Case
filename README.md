@@ -7,11 +7,11 @@ This repository contains the DAG code used in the [Case Inbev - breweries using 
 
 Pipelined was built by ingesting the website (<https://www.openbrewerydb.org/>) that provides data from the breweries.
 The medallion model was used, which uses layers (bronze, silver and gold). Developed in notebooks on Databricks (.iypnb) 
-The start is carried out by Airflow and all of this was containerized in docker to provide all files via gitHub
+The start is carried out by Airflow and all of this was containerized in docker to provide all files via gitHub.
 The language considered was pyspark with delta tables to provide logs
 
 This application runs this repository with Airflow.
-Containerization of the Databricks with Airflow application to provide synchronization and activation of notebooks 
+Containerization of the Databricks with Airflow application to provide synchronization and activation of notebooks.
 You need to add in `.env` and add your own credentials. 
 The code used in the Databricks notebooks is available in the `databricks_notebook_code` folder.
 
@@ -29,6 +29,8 @@ Run this Airflow project without installing anything locally.
 
 1. All failure monitoring and alerting is carried out internally in Databricks where we can see from the execution history which job error occurred and check the details, lines and causes directly in Databricks.
 2. It is also possible to look at the execution of each job through the Spark UI to identify partitioning, slowness and execution time problems in the Spark Dags and Catalyst Optimizer in more detail.
+  ![jobs_databricks](https://github.com/user-attachments/assets/5d6e050a-de7e-44cd-a190-a4070abc1f53)
+
 3. In case of errors, the execution can be repeated according to the existing configuration and if there is an error again, a deeper validation will need to be carried out to overcome whether it is related to the code or not for a manual execution.
 In case of failures, the document can also help with recovery https://docs.databricks.com/pt/jobs/repair-job-failures.html
 
