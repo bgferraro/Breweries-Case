@@ -1,9 +1,9 @@
-## Breweries Case Inbev 
+ Breweries Case Inbev 
 ==================================
 
 This repository contains the DAG code used in the [Case Inbev - breweries using Databricks notebooks with medallion architecture in pipelined to data]
 
-# How the model was built
+## How the model was built
 
 Pipelined was built by ingesting the website (<https://www.openbrewerydb.org/>) that provides data from the breweries.
 The medallion model was used, which uses layers (bronze, silver and gold). Developed in notebooks on Databricks (.iypnb) 
