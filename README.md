@@ -28,14 +28,13 @@ Run this Airflow project without installing anything locally.
 ## Resources / Monitoring / Alerts 
 
 1. The Cluster used has the configuration below
-   ![image](https://github.com/user-attachments/assets/d97a7151-9a96-4184-a78d-9b5b08ca0b3e)
+   ![image](https://github.com/user-attachments/assets/cab0aa73-f0a5-42bb-8e15-a97e38390651)
 
 2. All failure monitoring and alerting is carried out internally in Databricks where we can see from the execution history which job error occurred and check the details, lines and causes directly in Databricks.
-   ![image](https://github.com/user-attachments/assets/1fad3775-0514-451c-82c7-d25421b059cd)
+   ![image](https://github.com/user-attachments/assets/3a74e88e-3bcf-4095-9b26-01a0a6b48930)
 
 3. It is also possible to look at the execution of each job through the Spark UI to identify partitioning, parallel processes execution time problems in the Spark Dags and Catalyst Optimizer in more detail.
- ![image](https://github.com/user-attachments/assets/1082b9e9-ceb6-4116-824b-7a5460a545a1)
-
+![image](https://github.com/user-attachments/assets/adca78e7-ebdd-46df-a1d8-9e69269c0015)
 
 
 2. In case of errors, the execution can be repeated according to the existing configuration and if there is an error again, a deeper validation will need to be carried out to overcome whether it is related to the code or not for a manual execution.
